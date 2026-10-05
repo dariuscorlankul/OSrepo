@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CLionExternalBuildManager">
+    <target id="703f8e70-ac2c-45da-b7d5-d87d4deeee75" name="custom build T" defaultType="TOOL">
+      <configuration id="9728fab4-d441-45c9-824a-6587ccb802ad" name="custom build T" toolchainName="Default">
+        <build type="TOOL">
+          <tool actionId="Tool_External Tools_make" />
+        </build>
+        <clean type="TOOL">
+          <tool actionId="Tool_External Tools_make" />
+        </clean>
+      </configuration>
+    </target>
+  </component>
+</project>

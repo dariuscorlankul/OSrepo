@@ -1,0 +1,99 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) sayHello",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/sayhello",
+            "args": ["bert"],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Clear debuginfod URLs",
+                    "text": "set debuginfod urls ",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "make sayHello"
+        },
+        {
+            "name": "(gdb) factorial",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/factorial",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Clear debuginfod URLs",
+                    "text": "set debuginfod urls ",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "make factorial"
+        },
+        {
+   
+            "name": "(gdb) helloWorld",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/a.out",
+            "args": ["Bert"],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Clear debuginfod URLs",
+                    "text": "set debuginfod urls ",
+                    "ignoreFailures": true
+                }
+                , {
+                    "text": "set debuginfod enabled off"
+                }
+            ],
+            "preLaunchTask": "make HelloWorld"
+        }
+    ]
+}

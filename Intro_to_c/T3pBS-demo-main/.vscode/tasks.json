@@ -1,0 +1,26 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "make HelloWorld",
+            "command": "make",
+            "args": ["all"],
+            "options": {"cwd": "${workspaceFolder}"},
+        },
+        {
+            "type": "shell",
+            "label": "make factorial",
+            "command": "make",
+            "args": ["factorial"],
+            "options": {"cwd": "${workspaceFolder}"},
+        },
+        {
+            "type": "shell",
+            "label": "make sayHello",
+            "command": "make",
+            "args": ["sayHello"],
+            "options": {"cwd": "${workspaceFolder}"},
+        }
+    ],
+    "version": "2.0.0"
+}
